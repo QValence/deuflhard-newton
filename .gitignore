@@ -1,0 +1,91 @@
+############################################
+# Python bytecode / caches
+############################################
+__pycache__/
+*.py[cod]
+*$py.class
+
+############################################
+# Native extensions / compiled artifacts
+############################################
+*.so
+*.dylib
+*.dll
+*.pyd
+
+############################################
+# Packaging / build artifacts
+############################################
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+.installed.cfg
+*.egg
+
+############################################
+# Virtual environments
+############################################
+.env*
+.venv*
+env*/
+venv*/
+ENV*/
+env*.bak/
+venv*.bak/
+
+############################################
+# Test / coverage / profiling outputs
+############################################
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache/
+pytest_cache/
+nosetests.xml
+coverage.xml
+htmlcov/
+.prof
+*.prof
+
+############################################
+# Logs and runtime traces
+############################################
+*.log
+
+############################################
+# Documentation build outputs
+############################################
+docs/_build/
+site/
+
+############################################
+# IDEs / editors
+############################################
+.idea/
+.vscode/
+.spyproject/
+.ropeproject/
+.project
+.pydevproject
+.mr.developer.cfg
+
+############################################
+# OS-specific junk
+############################################
+.DS_Store
+Thumbs.db
+
+############################################
+# Notebooks
+############################################
+.ipynb_checkpoints/
+
+############################################
+# Miscellaneous, usage-specifics
+############################################
+personal*
+save_dir/
+tmp/
