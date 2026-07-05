@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deuflhard-newton"
+version = "0.2.0"
+description = "Newton-type methods for nonlinear equation systems (Deuflhard framework)"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "csdiff",
+]
+
+[project.optional-dependencies]
+# scipy enables LU factorisation reuse in the regularity loop — recommended
+# for highly/extremely nonlinear problems where the inner damping loop runs
+# many times per outer iteration.
+fast = ["scipy"]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
